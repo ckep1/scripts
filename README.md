@@ -6,11 +6,11 @@ I personally created aliases in my terminal to access these quickly from my work
 Python must be installed. These do not require outside dependencies to be installed.
 
 ## filetree.py
-This script outputs your current file tree similar to `ls` but with a few changes:
-- It is recursive
+This script outputs your current directory's file tree similar to `ls` but with a few changes:
 - If there is a .gitignore file present in the directory, the patterns will be matched.
 - .git folders are also ignored (requires .gitignore to be present currently).
-- The files are output in a hierarchal format.
+- It is recursive similar to `ls -R`
+- The files are output in a hierarchal format using indentations where each file has its own line.
 ### Usage:
 - Output current working directory files to terminal `python filetree.py`
 - Specify a Directory via an Argument `python filetree.py /path/to/dir`
